@@ -12,37 +12,37 @@ tested on ubuntu: 16.04
 - U - update
 - D - delete
 
-#INSTALL
+##INSTALL
 
-- get files: 
+1. Get files: 
 
 ```shell
 $git clone https://github.com/cmsrs/mean_crud.git
 $cd ./mean_crud
 ```
 
-- installing Node Modules for server
+2. Installing Node Modules for server
 
 ```shell
 npm install
 ```
 
-- start MongoDB
+3. Start MongoDB
 
 
 ```shell
-$/etc/init.d/mongodb  start
+#/etc/init.d/mongodb  start
 ```
 and change database config in file: ./server/config/db.js
 
 
-- start server
+4. Start server
 
 ```shell
 $npm start
 ```
 
-- test server
+5. Test server
 
 create 10 examples records:
 
@@ -52,20 +52,23 @@ $ ./tests/t.sh 10
 ```
 
 
-- install angular 2 and dependents (for client)
+6. Install angular 2 and dependents (for client)
+
 
 ```shell
 $cd app
 $npm install 
 ```
 
-- go to page
+7. Go to page
+
 http://localhost:3000 
 
 
-- for developers - manage Angular 2 
+8. For developers - manage Angular 2 
 
 ```shell
 $npm start 
 ```
+
 http://localhost:3001 
