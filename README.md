@@ -54,7 +54,7 @@
    $git clone https://github.com/angular/quickstart.git app
    $cd app
    $npm install 
-   $cd src; mv app app_org;  mv ../../app_src_app .; mv app_src_app app; cd ..
+   $mv src src_org; mv ../app_src .; mv app_src src
    $npm start   
    ```
    <http://localhost:3001>   
