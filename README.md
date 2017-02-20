@@ -1,4 +1,4 @@
-MEAN CRUD:
+#MEAN CRUD:
 tested on ubuntu: 16.04 
 
 M - MongoDb
@@ -12,40 +12,60 @@ R - read
 U - update
 D - delete
 
+#INSTALL
 
+- get files: 
 
-1. get files: 
-
+```shell
 $git clone https://github.com/cmsrs/mean_crud.git
 $cd ./mean_crud
+```
 
-2. installing Node Modules for server
+- installing Node Modules for server
 
+```shell
 npm install
+```
 
-3. start MongoDB
+- start MongoDB
 
-#/etc/init.d/mongodb  start
+
+```shell
+$/etc/init.d/mongodb  start
+```
 and change database config in file: ./server/config/db.js
 
 
-4. start server
-$npm start
+- start server
 
-5. test server
+```shell
+$npm start
+```
+
+- test server
 
 create 10 examples records:
+
+
+```shell
 $ ./tests/t.sh 10
+```
 
 
-7. install angular 2 and dependents (for client)
+- install angular 2 and dependents (for client)
+
+```shell
 $cd app
 $npm install 
+```
 
-8. go to page
+- go to page
 http://localhost:3000 
 
 
-9. for developers - manage Angular 2 
+- for developers - manage Angular 2 
+
+```shell
 $npm start 
+```
 http://localhost:3001 
