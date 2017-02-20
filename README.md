@@ -1,5 +1,4 @@
 #MEAN CRUD
-tested on ubuntu 16.04 
 
    *M*  MongoDb  
    *E*  Express  
