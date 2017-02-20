@@ -22,7 +22,7 @@
 2. Installing Node Modules for server
    
    ```shell
-   $npm install
+   $npm install  express  mongoose body-parser
    ```
    
 3. Start MongoDB
@@ -37,7 +37,7 @@
 4. Start server
    
    ```shell
-   $npm start
+   $nodejs server.js
    ```
    
 5. Test server
