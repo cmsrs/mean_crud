@@ -51,10 +51,10 @@
 6. Install angular 2 and dependents for client
    
    ```shell
-   git clone https://github.com/angular/quickstart.git app
+   $git clone https://github.com/angular/quickstart.git app
    $cd app
    $npm install 
-   cd src; mv app app_org;  mv ../../app_src_app .; mv app_src_app app; cd ..
+   $cd src; mv app app_org;  mv ../../app_src_app .; mv app_src_app app; cd ..
    $npm start   
    ```
    <http://localhost:3001>   
