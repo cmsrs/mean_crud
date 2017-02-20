@@ -1,18 +1,17 @@
 #MEAN CRUD
 tested on ubuntu: 16.04 
 
-- M - MongoDb
-- E - Express
-- A - Angular 2
-- N - Node.js
+* M - MongoDb
+* E - Express
+* A - Angular 2
+* N - Node.js
 
+* C - create
+* R - read
+* U - update
+* D - delete
 
-- C - create
-- R - read
-- U - update
-- D - delete
-
-##INSTALL
+###INSTALL
 
 1. Get files
    
@@ -24,13 +23,13 @@ tested on ubuntu: 16.04
 2. Installing Node Modules for server
    
    ```shell
-   npm install
+   $npm install
    ```
    
 3. Start MongoDB
    
    ```shell
-   #/etc/init.d/mongodb  start
+   $/etc/init.d/mongodb  start
    ```
    
    and change database config in file: ./server/config/db.js if you need
@@ -47,7 +46,7 @@ tested on ubuntu: 16.04
    create 10 examples records:
    
    ```shell
-   $ ./tests/t.sh 10
+   $./tests/t.sh 10
    ```
    
 6. Install angular 2 and dependents for client
