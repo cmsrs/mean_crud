@@ -54,17 +54,12 @@
    git clone https://github.com/angular/quickstart.git app
    $cd app
    $npm install 
-   mv ../app_src_app src/app
+   cd src; mv app app_org;  mv ../../app_src_app .; mv app_src_app app; cd ..
+   $npm start   
    ```
+   <http://localhost:3001>   
    
 7. Go to page
    
    <http://localhost:3000>
-   
-8. For developers - manage Angular 2 
-   
-   ```shell
-   $npm start 
-   ```
-   
-   <http://localhost:3001>
+      
