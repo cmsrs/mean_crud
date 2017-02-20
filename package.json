@@ -1,0 +1,20 @@
+{
+  "name": "crud-mean",
+  "version": "1.0.0",
+  "description": "crud mean angular2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "nodejs server.js"
+  },
+  "keywords": [
+    "crud mean angular2"
+  ],
+  "author": "Robert Szczepanski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1"
+  }
+}

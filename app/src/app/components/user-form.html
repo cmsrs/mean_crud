@@ -1,0 +1,67 @@
+		<div class="client-form">
+			<form  class="well" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+				<h3 *ngIf="!isEdit">Add Client</h3>
+				<h3 *ngIf="isEdit">Edit Client</h3>
+
+
+				<div class="form-group">
+					<label>First Name</label>
+					<input type="text" class="form-control" required  [(ngModel)]="user.first_name" name="first_name" placeholder="First Name"  #first_name="ngModel" >
+					<div *ngIf="first_name.errors && (first_name.dirty || first_name.touched)" class="alert alert-danger">
+						<div [hidden]="!first_name.errors.required">
+							Field is required
+						</div>
+					</div> 
+				</div>
+
+
+				<div class="form-group">
+					<label>Last Name</label>
+					<input type="text" class="form-control" required  #last_name="ngModel"  [(ngModel)]="user.last_name" name="last_name" placeholder="Last Name">
+					<div *ngIf="last_name.errors && (last_name.dirty || last_name.touched)" class="alert alert-danger">
+						<div [hidden]="!last_name.errors.required">
+							Field is required
+						</div>
+					</div> 
+				</div>
+
+
+				<div class="form-group">
+					<label>Age</label>
+					<input type="number" class="form-control" required #age="ngModel"  [(ngModel)]="user.age" name="age" placeholder="Age">
+					<div *ngIf="age.errors && (age.dirty || age.touched)" class="alert alert-danger">
+						<div [hidden]="!age.errors.required">
+							Field must be number 
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="form-group">
+					<label>First Name Mother</label>
+					<input type="text" class="form-control" required   #first_name_mother="ngModel"  [(ngModel)]="user.first_name_mother" name="first_name_mother" placeholder="First Name Mother">
+					<div *ngIf="first_name_mother.errors && (first_name_mother.dirty || first_name_mother.touched)" class="alert alert-danger">
+						<div [hidden]="!first_name_mother.errors.required">
+							Field is required
+						</div>
+					</div> 
+				</div>
+
+
+				<div class="form-group">
+					<label>First Name Father</label>
+					<input type="text" class="form-control" required   #first_name_father="ngModel"  [(ngModel)]="user.first_name_father" name="first_name_father" placeholder="First Name Father">
+					<div *ngIf="first_name_father.errors && (first_name_father.dirty || first_name_father.touched)" class="alert alert-danger">
+						<div [hidden]="!first_name_father.errors.required">
+							Field is required
+						</div>
+					</div> 
+				</div>
+
+
+<!--				<button  [disabled]="!ngForm.valid"  (click)="addUser()" class="btn btn-primary">Submit</button> -->
+				<button type="submit" class="btn btn-success" [disabled]="!f.form.valid">Submit</button>
+			</form>
+		</div>
