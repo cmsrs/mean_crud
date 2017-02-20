@@ -1,9 +1,15 @@
 #MEAN CRUD
-tested on ubuntu: 16.04 
+tested on ubuntu 16.04 
 
-   *M*  MongoDb  *E*  Express  *A*  Angular 2  *N*  Node.js
+   *M*  MongoDb  
+   *E*  Express  
+   *A*  Angular 2  
+   *N*  Node.js
 
-   *C*  create  *R*  read  *U*  update  *D*  delete
+   *C*  create  
+   *R*  read  
+   *U*  update  
+   *D*  delete
 
 ###INSTALL
 
