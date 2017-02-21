@@ -63,3 +63,6 @@
    
    <http://localhost:3000>
       
+###VIDEO TUTORIAL
+
+   <http://www.cmsrs.pl/en/cms/projects/mean-crud---mongodb-express-angular2-node.js>
